@@ -1,6 +1,6 @@
 # clinical-lab-tracking-system
 
-# Clinical Laboratory Data & Tracking System
+ # Clinical Laboratory Data & Tracking System
 
 > **Project Focus:** Laboratory Information Systems (LIS) & Data Architecture
 > **Domain:** Clinical Pathology & Molecular Diagnostics
@@ -26,11 +26,3 @@ clinical-lab-tracking-system/
 ├── docs/
 │   └── data_dictionary.md
 └── README.md
-
-
-mysql -u root -p < database_setup/schema_ddl.sql
-
-
-mysql -u root -p lab_db < analytical_queries/diagnostic_metrics.sql
-
-
