@@ -15,3 +15,12 @@ The system manages critical clinical metrics across **5 core tables**:
 | `analyzers` | Automated laboratory machinery metadata. |
 | `test_results` | Diagnostic values, reference ranges, and panic value flags. |
 | `qc_logs` | Daily control run measurements used for calibration rules. |
+
+
+---
+
+## 🚀 How to Run
+
+### Step 1 — Setup Database
+```bash
+mysql -u root -p < database_setup/schema_ddl.sql
