@@ -1,31 +1,6 @@
 # Clinical Laboratory Data & Tracking System
 
-> **Project Focus:** Laboratory Information Systems (LIS) & Data Architecture
-> **Domain:** Clinical Pathology & Molecular Diagnostics
-> **Author:** Meet Patel
-> **Completed:** July 2026
-
-A fully normalized relational database layout designed to simulate a modern hospital Laboratory Information System (LIS). The schema securely tracks patient records, specimen collection tubes, diagnostic tests, lab instrumentation, and Quality Control (QC) control runs, conforming strictly to Third Normal Form (3NF) relational database standards.
-
----
-
-## 📂 Repository Structure
-
-```text
-clinical-lab-tracking-system/
-│
-├── database_setup/
-│   └── schema_ddl.sql
-│
-├── analytical_queries/
-│   └── diagnostic_metrics.sql
-│   └── qc_validation.sql
-│
-├── docs/
-│   └── data_dictionary.md
-└── README.md
-
-
+A fully normalized relational database layout designed to simulate a modern hospital Laboratory Information System (LIS). The schema securely tracks patient records and diagnostics, conforming strictly to Third Normal Form (3NF) relational database standards.
 
 ---
 
@@ -35,10 +10,8 @@ The system manages critical clinical metrics across **5 core tables**:
 
 | Table | Description |
 | :--- | :--- |
-| `patients` | Unique identifiers, demographics, and medical record numbers (MRN). |
-| `specimens` | Sample tracking (blood, swab, tissue), collection timestamps, and storage status. |
-| `analyzers` | Automated laboratory machinery metadata (e.g., Roche Cobas, Sysmex). |
-| `test_results` | Diagnostic values, reference ranges, panic value flags, and validation statuses. |
-| `qc_logs` | Daily control run measurements used to calculate Westgard rules. |
-
-
+| `patients` | Unique identifiers, demographics, and medical record numbers. |
+| `specimens` | Sample tracking (blood, swab, tissue) and timestamps. |
+| `analyzers` | Automated laboratory machinery metadata. |
+| `test_results` | Diagnostic values, reference ranges, and panic value flags. |
+| `qc_logs` | Daily control run measurements used for calibration rules. |
