@@ -1,6 +1,4 @@
-# clinical-lab-tracking-system
-
- # Clinical Laboratory Data & Tracking System
+# Clinical Laboratory Data & Tracking System
 
 > **Project Focus:** Laboratory Information Systems (LIS) & Data Architecture
 > **Domain:** Clinical Pathology & Molecular Diagnostics
@@ -26,24 +24,3 @@ clinical-lab-tracking-system/
 ├── docs/
 │   └── data_dictionary.md
 └── README.md
-
----
-
-## 📊 Database Schema
-
-The system manages critical clinical metrics across **5 core tables**:
-
-| Table | Description |
-| :--- | :--- |
-| `patients` | Unique identifiers, demographics, and medical record numbers (MRN). |
-| `specimens` | Sample tracking (blood, swab, tissue), collection timestamps, and storage status. |
-| `analyzers` | Automated laboratory machinery metadata (e.g., Roche Cobas, Sysmex). |
-| `test_results` | Diagnostic values, reference ranges, panic value flags, and validation statuses. |
-| `qc_logs` | Daily control run measurements used to calculate Westgard rules. |
-
----
-
-## 🚀 How to Run
-
-### Prerequisites
-* MySQL 8.0+ or compatible PostgreSQL
